@@ -1,3 +1,42 @@
 # LinkStart
-LinkStart est une application réalisée pour un projet scolaire. Il s'agit d'une application pour trouver des partenaires de jeux, à la façon Tinder.
 
+LinkStart est une application réalisée pour un projet scolaire.  
+Le projet utilise :
+- `React + Vite` pour le front
+- `react-router-dom` pour la navigation
+- `json-server` pour simuler une API/base de données locale
+
+## Prérequis
+
+- `Node.js` (version récente recommandée)
+- `npm`
+
+## Installation
+
+```bash
+npm install
+```
+
+## Commandes disponibles
+
+### Développement
+
+- `npm run dev`  
+	Lance uniquement le front Vite (généralement sur `http://localhost:5173`).
+
+- `npm run api`  
+	Lance uniquement `json-server` avec le fichier `db.json` sur le port `3001`.
+
+- `npm run dev:full`  
+	Lance **le front + l'API mock en même temps** (`vite` et `json-server`).
+
+### Qualité et build
+
+- `npm run lint`  
+	Vérifie le code avec ESLint.
+
+- `npm run build`  
+	Génère le build de production (`tsc -b` puis `vite build`).
+
+- `npm run preview`  
+	Sert localement le build de production pour test.
