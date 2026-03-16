@@ -177,8 +177,26 @@ input {
   background-color: var(--color-primary-hover);
 }
 
+.btn-primary:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
 .btn-primary:active {
   transform: translateY(1px);
+}
+
+.form-message {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.form-message.is-error {
+  color: #b42318;
+}
+
+.form-message.is-success {
+  color: #067647;
 }
 
 @media (max-width: 540px) {

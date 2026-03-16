@@ -1,31 +1,17 @@
-import { useState } from 'react'
-import { AuthHeader } from './components/AuthHeader'
-import { AuthTabs } from './components/AuthTabs'
-import { LoginView } from './views/LoginView'
-import { RegisterView } from './views/RegisterView'
-
-type AuthView = 'login' | 'register'
+import { Navigate, Route, Routes } from 'react-router-dom'
+import { AuthPage } from './views/AuthPage'
+import { DashboardView } from './views/DashboardView'
+import { NotFoundView } from './views/NotFoundView'
 
 function App() {
-	const [activeView, setActiveView] = useState<AuthView>('login')
-
 	return (
-		<main className="app-shell">
-			<section className="auth-card" aria-labelledby="auth-title">
-				<AuthHeader
-					title={activeView === 'login' ? 'Connexion' : 'Inscription'}
-					subtitle={
-						activeView === 'login'
-							? 'Connecte-toi pour accéder à ton espace.'
-							: 'Crée ton compte en quelques secondes.'
-					}
-				/>
-
-				<AuthTabs activeView={activeView} onChangeView={setActiveView} />
-
-				{activeView === 'login' ? <LoginView /> : <RegisterView />}
-			</section>
-		</main>
+		<Routes>
+			<Route path="/" element={<Navigate to="/login" replace />} />
+			<Route path="/login" element={<AuthPage mode="login" />} />
+			<Route path="/register" element={<AuthPage mode="register" />} />
+			<Route path="/dashboard" element={<DashboardView />} />
+			<Route path="*" element={<NotFoundView />} />
+		</Routes>
 	)
 }
 
