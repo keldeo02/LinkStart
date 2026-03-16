@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "fullName": "Admin LinkStart",
+      "email": "admin@linkstart.dev",
+      "password": "admin123"
+    },
+    {
+      "id": "b1b0",
+      "fullName": "Gabin",
+      "email": "gabin.freval@gmail.com",
+      "password": "azerty"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
