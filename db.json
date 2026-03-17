@@ -15,35 +15,6 @@
       ]
     },
     {
-      "id": "4108",
-      "username": "gabin.frvl",
-      "email": "gabin.freval@gmail.com",
-      "password": "azerty",
-      "platform": [
-        "PC",
-        "Xbox"
-      ],
-      "preferences": [
-        "PC",
-        "PS5",
-        "Xbox"
-      ]
-    },
-    {
-      "id": "d987",
-      "username": "keldeo",
-      "email": "gabin.freval@stjosup.com",
-      "password": "azerty",
-      "platform": [
-        "Xbox",
-        "PC"
-      ],
-      "preferences": [
-        "Xbox",
-        "PC"
-      ]
-    },
-    {
       "id": "u100",
       "username": "NoxPlayer",
       "email": "nox@linkstart.dev",
