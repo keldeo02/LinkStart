@@ -1,11 +1,17 @@
 import { useState, type ChangeEvent, type FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AuthField } from '../components/AuthField'
+import { PlatformPicker } from '../components/PlatformPicker'
 import { registerUser } from '../services/authApi'
 
 export function RegisterView() {
   const navigate = useNavigate()
-  const [formData, setFormData] = useState({ fullName: '', email: '', password: '' })
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: '',
+    platform: [] as string[],
+  })
   const [errorMessage, setErrorMessage] = useState('')
   const [successMessage, setSuccessMessage] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -20,16 +26,21 @@ export function RegisterView() {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
-    if (!formData.fullName || !formData.email || !formData.password) {
+    if (!formData.username || !formData.email || !formData.password || formData.platform.length === 0) {
       setErrorMessage('Merci de remplir tous les champs.')
       return
     }
 
     try {
       setIsSubmitting(true)
-      await registerUser(formData)
+      await registerUser({
+        username: formData.username,
+        email: formData.email,
+        password: formData.password,
+        platform: formData.platform,
+      })
       setSuccessMessage('Compte créé avec succès. Redirection vers la connexion...')
-      setFormData({ fullName: '', email: '', password: '' })
+      setFormData({ username: '', email: '', password: '', platform: [] })
 
       setTimeout(() => {
         navigate('/login')
@@ -48,11 +59,11 @@ export function RegisterView() {
   return (
     <form className="auth-form" noValidate onSubmit={handleSubmit}>
       <AuthField
-        label="Nom complet"
+        label="Username"
         type="text"
-        placeholder="Ton nom"
-        name="fullName"
-        value={formData.fullName}
+        placeholder="Ton pseudo gamer"
+        name="username"
+        value={formData.username}
         onChange={handleInputChange}
         autoComplete="name"
       />
@@ -74,6 +85,18 @@ export function RegisterView() {
         onChange={handleInputChange}
         autoComplete="new-password"
       />
+
+      <div className="form-field">
+        <span>Plateforme(s)</span>
+        <PlatformPicker
+          selected={formData.platform}
+          onChange={(platforms) => {
+            setFormData((prev) => ({ ...prev, platform: platforms }))
+            setErrorMessage('')
+            setSuccessMessage('')
+          }}
+        />
+      </div>
 
       {errorMessage ? <p className="form-message is-error">{errorMessage}</p> : null}
       {successMessage ? <p className="form-message is-success">{successMessage}</p> : null}

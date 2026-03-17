@@ -1,16 +1,27 @@
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001'
+import { API_URL } from './apiConfig'
+import type { RegisterPayload, User } from '../types/models'
 
-type User = {
-  id: number
-  fullName: string
+type RawUser = Partial<Omit<User, 'platform'>> & {
+  id: string
   email: string
   password: string
+  platform?: string | string[]
 }
 
-type RegisterPayload = {
-  fullName: string
-  email: string
-  password: string
+function normalizeUser(user: RawUser): User {
+  const platforms: string[] = Array.isArray(user.platform)
+    ? user.platform
+    : user.platform
+      ? [user.platform]
+      : ['PC']
+  return {
+    id: user.id,
+    username: user.username ?? 'Utilisateur',
+    email: user.email,
+    platform: platforms,
+    password: user.password,
+    preferences: user.preferences ?? platforms,
+  }
 }
 
 export async function loginUser(email: string, password: string): Promise<User | null> {
@@ -22,8 +33,8 @@ export async function loginUser(email: string, password: string): Promise<User |
     throw new Error('Impossible de contacter le serveur.')
   }
 
-  const users = (await response.json()) as User[]
-  return users[0] ?? null
+  const users = (await response.json()) as Array<Partial<User> & { id: string; email: string; password: string }>
+  return users[0] ? normalizeUser(users[0]) : null
 }
 
 export async function registerUser(payload: RegisterPayload): Promise<User> {
@@ -51,5 +62,11 @@ export async function registerUser(payload: RegisterPayload): Promise<User> {
     throw new Error('Impossible de créer le compte.')
   }
 
-  return (await createResponse.json()) as User
+  const created = (await createResponse.json()) as Partial<User> & {
+    id: string
+    email: string
+    password: string
+  }
+
+  return normalizeUser(created)
 }

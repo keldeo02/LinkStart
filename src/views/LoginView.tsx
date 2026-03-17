@@ -2,6 +2,7 @@ import { useState, type ChangeEvent, type FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AuthField } from '../components/AuthField'
 import { loginUser } from '../services/authApi'
+import { saveSessionFromUser } from '../services/authSession'
 
 export function LoginView() {
   const navigate = useNavigate()
@@ -32,7 +33,8 @@ export function LoginView() {
         return
       }
 
-      navigate('/dashboard')
+      saveSessionFromUser(user)
+      navigate('/posts')
     } catch (error) {
       if (error instanceof Error) {
         setErrorMessage(error.message)
