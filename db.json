@@ -11,12 +11,6 @@
       "fullName": "Gabin",
       "email": "gabin.freval@gmail.com",
       "password": "azerty"
-    },
-    {
-      "id": "5c28",
-      "fullName": "ROMUALD KOULKEO",
-      "email": "test@romuald.com",
-      "password": "test"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
