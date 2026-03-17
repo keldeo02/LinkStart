@@ -1,6 +1,6 @@
-import { Navigate, Route, Routes } from 'react-router-dom'
-import { AppLayout } from './components/AppLayout'
-import { ProtectedRoute } from './components/ProtectedRoute'
+import { Navigate, Outlet, Route, Routes } from 'react-router-dom'
+import { MainNavbar } from './components/MainNavbar'
+import { isAuthenticated } from './services/authSession'
 import { AuthPage } from './views/AuthPage'
 import { HomeView } from './views/HomeView'
 import { MeEditView } from './views/MeEditView'
@@ -15,6 +15,25 @@ import { PostEditView } from './views/PostEditView'
 import { PostsView } from './views/PostsView'
 import { ProfileView } from './views/ProfileView'
 import { SwipeView } from './views/SwipeView'
+
+function AppLayout() {
+	return (
+		<>
+			<MainNavbar />
+			<div className="page-wrap">
+				<Outlet />
+			</div>
+		</>
+	)
+}
+
+function ProtectedRoute() {
+	if (!isAuthenticated()) {
+		return <Navigate to="/login" replace />
+	}
+
+	return <Outlet />
+}
 
 function App() {
 	return (
