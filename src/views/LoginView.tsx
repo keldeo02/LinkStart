@@ -32,6 +32,9 @@ export function LoginView() {
         return
       }
 
+      // NOUVEAU : On sauvegarde l'ID de l'utilisateur connecté dans le navigateur
+      localStorage.setItem('userId', user.id.toString())
+
       navigate('/dashboard')
     } catch (error) {
       if (error instanceof Error) {

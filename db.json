@@ -11,6 +11,12 @@
       "fullName": "Gabin",
       "email": "gabin.freval@gmail.com",
       "password": "azerty"
+    },
+    {
+      "id": "c042",
+      "fullName": "Axel",
+      "email": "axeleouzan@gmail.com",
+      "password": "azerty"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
