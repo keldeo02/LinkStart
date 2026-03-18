@@ -2,15 +2,682 @@
   "users": [
     {
       "id": "1",
-      "fullName": "Admin LinkStart",
+      "username": "AdminLink",
       "email": "admin@linkstart.dev",
-      "password": "admin123"
+      "password": "admin123",
+      "platform": [
+        "PC",
+        "PS5"
+      ],
+      "preferences": [
+        "PC",
+        "PS5"
+      ]
     },
     {
-      "id": "b1b0",
-      "fullName": "Gabin",
-      "email": "gabin.freval@gmail.com",
-      "password": "azerty"
+      "id": "u100",
+      "username": "NoxPlayer",
+      "email": "nox@linkstart.dev",
+      "password": "nox123",
+      "platform": [
+        "PS5",
+        "PC"
+      ],
+      "preferences": [
+        "PS5",
+        "PC"
+      ]
+    },
+    {
+      "id": "u101",
+      "username": "LunaShot",
+      "email": "luna@linkstart.dev",
+      "password": "luna123",
+      "platform": [
+        "Switch",
+        "PC"
+      ],
+      "preferences": [
+        "Switch",
+        "PC"
+      ]
+    },
+    {
+      "id": "u102",
+      "username": "RikoRush",
+      "email": "riko@linkstart.dev",
+      "password": "riko123",
+      "platform": [
+        "Xbox",
+        "PS5"
+      ],
+      "preferences": [
+        "Xbox",
+        "PS5"
+      ]
+    },
+    {
+      "id": "u103",
+      "username": "MiraMain",
+      "email": "mira@linkstart.dev",
+      "password": "mira123",
+      "platform": [
+        "PC"
+      ],
+      "preferences": [
+        "PC"
+      ]
+    },
+    {
+      "id": "u104",
+      "username": "GhostLag",
+      "email": "ghost@linkstart.dev",
+      "password": "ghost123",
+      "platform": [
+        "PS5",
+        "Xbox",
+        "PC"
+      ],
+      "preferences": [
+        "PS5",
+        "Xbox",
+        "PC"
+      ]
+    },
+    {
+      "id": "u105",
+      "username": "ZenCarry",
+      "email": "zen@linkstart.dev",
+      "password": "zen123",
+      "platform": [
+        "PC",
+        "Switch"
+      ],
+      "preferences": [
+        "PC",
+        "Switch"
+      ]
+    },
+    {
+      "id": "u106",
+      "username": "AkiraAim",
+      "email": "akira@linkstart.dev",
+      "password": "akira123",
+      "platform": [
+        "Xbox"
+      ],
+      "preferences": [
+        "Xbox"
+      ]
+    },
+    {
+      "id": "u107",
+      "username": "NovaHeal",
+      "email": "nova@linkstart.dev",
+      "password": "nova123",
+      "platform": [
+        "PS5",
+        "Switch"
+      ],
+      "preferences": [
+        "PS5",
+        "Switch"
+      ]
+    },
+    {
+      "id": "45ba",
+      "username": "xx_BGDU76_xx",
+      "email": "bidul@machin.fr",
+      "password": "TOTOTATA",
+      "platform": [
+        "PC",
+        "Xbox"
+      ],
+      "preferences": [
+        "PC",
+        "Xbox"
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": "b878",
+      "game": "Valorant",
+      "rank": "Diamond",
+      "message": "Je cherche des gens pour push Immortal ce soir.",
+      "platform": [
+        "PC",
+        "PS5"
+      ],
+      "authorId": "4108"
+    },
+    {
+      "id": "p201",
+      "game": "Rocket League",
+      "rank": "Champion",
+      "message": "Besoin d'un duo chill et régulier.",
+      "platform": [
+        "PC",
+        "Switch"
+      ],
+      "authorId": "u105"
+    },
+    {
+      "id": "p202",
+      "game": "FIFA 26",
+      "rank": "Division 2",
+      "message": "Recherche coéquipier Club Pro avec micro.",
+      "platform": [
+        "PS5",
+        "Xbox"
+      ],
+      "authorId": "u102"
+    },
+    {
+      "id": "p203",
+      "game": "Halo Infinite",
+      "rank": "Platine",
+      "message": "Team arène le week-end, bonne ambiance.",
+      "platform": [
+        "Xbox",
+        "PC"
+      ],
+      "authorId": "d987"
+    },
+    {
+      "id": "p204",
+      "game": "Fortnite",
+      "rank": "Elite",
+      "message": "Duo build/no build selon envie.",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch"
+      ],
+      "authorId": "u104"
+    },
+    {
+      "id": "p205",
+      "game": "Overwatch 2",
+      "rank": "Master",
+      "message": "Main support cherche tank sérieux.",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "authorId": "u103"
+    },
+    {
+      "id": "p206",
+      "game": "Apex Legends",
+      "rank": "Diamond",
+      "message": "Grind ranked le soir 21h-23h.",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "authorId": "u100"
+    },
+    {
+      "id": "p207",
+      "game": "Mario Kart 8 Deluxe",
+      "rank": "Casual",
+      "message": "Sessions fun, pas de prise de tête.",
+      "platform": [
+        "Switch"
+      ],
+      "authorId": "u101"
+    },
+    {
+      "id": "p208",
+      "game": "Call of Duty: Warzone",
+      "rank": "Or",
+      "message": "Recherche trio pour BR et résurgence.",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "authorId": "u106"
+    },
+    {
+      "id": "p209",
+      "game": "League of Legends",
+      "rank": "Emerald",
+      "message": "ADC main cherche support stable.",
+      "platform": [
+        "PC"
+      ],
+      "authorId": "u107"
+    },
+    {
+      "id": "p210",
+      "game": "EA FC 26",
+      "rank": "Division 1",
+      "message": "Need mate pour coop saisons.",
+      "platform": [
+        "PS5",
+        "Xbox"
+      ],
+      "authorId": "1"
+    },
+    {
+      "id": "p211",
+      "game": "Minecraft",
+      "rank": "Survie",
+      "message": "Serveur survie vanilla en petit comité.",
+      "platform": [
+        "PC",
+        "Switch",
+        "Xbox"
+      ],
+      "authorId": "4108"
+    },
+    {
+      "id": "p212",
+      "game": "Rainbow Six Siege",
+      "rank": "Plat 2",
+      "message": "Stack 5v5, callouts FR, objectif rank up.",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "authorId": "u104"
+    },
+    {
+      "id": "p213",
+      "game": "Destiny 2",
+      "rank": "Raid",
+      "message": "Fireteam pour raid weekly reset.",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ],
+      "authorId": "u100"
+    },
+    {
+      "id": "b364",
+      "game": "AoE IV",
+      "rank": "960 Elo",
+      "message": "Qui pour FFA ",
+      "platform": [
+        "PC"
+      ],
+      "authorId": "45ba"
+    }
+  ],
+  "matches": [
+    {
+      "id": "43e2",
+      "announceId": "b878",
+      "userId": "u103",
+      "state": "valide"
+    },
+    {
+      "id": "ba28",
+      "announceId": "b878",
+      "userId": "d987",
+      "state": "refuse"
+    },
+    {
+      "id": "m301",
+      "announceId": "p201",
+      "userId": "4108",
+      "state": "en attente"
+    },
+    {
+      "id": "m302",
+      "announceId": "p201",
+      "userId": "u104",
+      "state": "valide"
+    },
+    {
+      "id": "m303",
+      "announceId": "p202",
+      "userId": "u100",
+      "state": "en attente"
+    },
+    {
+      "id": "m304",
+      "announceId": "p203",
+      "userId": "u102",
+      "state": "valide"
+    },
+    {
+      "id": "m305",
+      "announceId": "p204",
+      "userId": "u101",
+      "state": "en attente"
+    },
+    {
+      "id": "m306",
+      "announceId": "p205",
+      "userId": "u106",
+      "state": "refuse"
+    },
+    {
+      "id": "m307",
+      "announceId": "p206",
+      "userId": "u107",
+      "state": "valide"
+    },
+    {
+      "id": "m308",
+      "announceId": "p207",
+      "userId": "1",
+      "state": "en attente"
+    },
+    {
+      "id": "m309",
+      "announceId": "p208",
+      "userId": "u100",
+      "state": "en attente"
+    },
+    {
+      "id": "m310",
+      "announceId": "p209",
+      "userId": "4108",
+      "state": "refuse"
+    },
+    {
+      "id": "m311",
+      "announceId": "p210",
+      "userId": "u104",
+      "state": "valide"
+    },
+    {
+      "id": "m312",
+      "announceId": "p211",
+      "userId": "u103",
+      "state": "en attente"
+    },
+    {
+      "id": "m313",
+      "announceId": "p212",
+      "userId": "d987",
+      "state": "en attente"
+    },
+    {
+      "id": "m314",
+      "announceId": "p213",
+      "userId": "u105",
+      "state": "valide"
+    },
+    {
+      "id": "d8de",
+      "announceId": "b878",
+      "userId": "1",
+      "state": "refuse"
+    },
+    {
+      "id": "f470",
+      "announceId": "p201",
+      "userId": "1",
+      "state": "en attente"
+    },
+    {
+      "id": "86e0",
+      "announceId": "p202",
+      "userId": "1",
+      "state": "refuse"
+    },
+    {
+      "id": "1b4b",
+      "announceId": "p201",
+      "userId": "1",
+      "state": "en attente"
+    },
+    {
+      "id": "6a17",
+      "announceId": "b878",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "2a34",
+      "announceId": "p201",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "e3cf",
+      "announceId": "p202",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "5b8c",
+      "announceId": "p204",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "26c3",
+      "announceId": "p206",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "51fb",
+      "announceId": "p207",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "850a",
+      "announceId": "p208",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "8524",
+      "announceId": "p209",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "ad66",
+      "announceId": "p210",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "f8cb",
+      "announceId": "p211",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "77e7",
+      "announceId": "p212",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "d610",
+      "announceId": "p213",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "01f4",
+      "announceId": "p203",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "649b",
+      "announceId": "p205",
+      "userId": "45ba",
+      "state": "en attente"
+    }
+  ],
+  "friends": [
+    {
+      "id": "f001",
+      "requesterId": "1",
+      "receiverId": "2",
+      "state": "accepté"
+    },
+    {
+      "id": "f002",
+      "requesterId": "3",
+      "receiverId": "1",
+      "state": "accepté"
+    },
+    {
+      "id": "f003",
+      "requesterId": "1",
+      "receiverId": "4",
+      "state": "en attente"
+    },
+    {
+      "id": "f004",
+      "requesterId": "5",
+      "receiverId": "1",
+      "state": "en attente"
+    },
+    {
+      "id": "4f94",
+      "requesterId": "1",
+      "receiverId": "u100",
+      "state": "accepté"
+    },
+    {
+      "id": "7e09",
+      "requesterId": "45ba",
+      "receiverId": "u105",
+      "state": "en attente"
+    }
+  ],
+  "games": [
+    {
+      "id": "g1",
+      "title": "Valorant",
+      "platform": [
+        "PC",
+        "PS5"
+      ]
+    },
+    {
+      "id": "g2",
+      "title": "Rocket League",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch"
+      ]
+    },
+    {
+      "id": "g3",
+      "title": "FIFA 26",
+      "platform": [
+        "PS5",
+        "Xbox"
+      ]
+    },
+    {
+      "id": "g4",
+      "title": "Halo Infinite",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ]
+    },
+    {
+      "id": "g5",
+      "title": "Fortnite",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch"
+      ]
+    },
+    {
+      "id": "g6",
+      "title": "Overwatch 2",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ]
+    },
+    {
+      "id": "g7",
+      "title": "Apex Legends",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch"
+      ]
+    },
+    {
+      "id": "g8",
+      "title": "Mario Kart 8 Deluxe",
+      "platform": [
+        "Switch"
+      ]
+    },
+    {
+      "id": "g9",
+      "title": "Call of Duty: Warzone",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ]
+    },
+    {
+      "id": "g10",
+      "title": "League of Legends",
+      "platform": [
+        "PC"
+      ]
+    },
+    {
+      "id": "g11",
+      "title": "EA FC 26",
+      "platform": [
+        "PS5",
+        "Xbox"
+      ]
+    },
+    {
+      "id": "g12",
+      "title": "Minecraft",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox",
+        "Switch"
+      ]
+    },
+    {
+      "id": "g13",
+      "title": "Rainbow Six Siege",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ]
+    },
+    {
+      "id": "g14",
+      "title": "Destiny 2",
+      "platform": [
+        "PC",
+        "PS5",
+        "Xbox"
+      ]
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

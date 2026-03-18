@@ -30,13 +30,3 @@ npm install
 - `npm run dev:full`  
 	Lance **le front + l'API mock en même temps** (`vite` et `json-server`).
 
-### Qualité et build
-
-- `npm run lint`  
-	Vérifie le code avec ESLint.
-
-- `npm run build`  
-	Génère le build de production (`tsc -b` puis `vite build`).
-
-- `npm run preview`  
-	Sert localement le build de production pour test.
