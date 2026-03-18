@@ -123,6 +123,20 @@
         "PS5",
         "Switch"
       ]
+    },
+    {
+      "id": "45ba",
+      "username": "xx_BGDU76_xx",
+      "email": "bidul@machin.fr",
+      "password": "TOTOTATA",
+      "platform": [
+        "PC",
+        "Xbox"
+      ],
+      "preferences": [
+        "PC",
+        "Xbox"
+      ]
     }
   ],
   "posts": [
@@ -285,6 +299,16 @@
         "Xbox"
       ],
       "authorId": "u100"
+    },
+    {
+      "id": "b364",
+      "game": "AoE IV",
+      "rank": "960 Elo",
+      "message": "Qui pour FFA ",
+      "platform": [
+        "PC"
+      ],
+      "authorId": "45ba"
     }
   ],
   "matches": [
@@ -406,6 +430,128 @@
       "id": "1b4b",
       "announceId": "p201",
       "userId": "1",
+      "state": "en attente"
+    },
+    {
+      "id": "6a17",
+      "announceId": "b878",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "2a34",
+      "announceId": "p201",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "e3cf",
+      "announceId": "p202",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "5b8c",
+      "announceId": "p204",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "26c3",
+      "announceId": "p206",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "51fb",
+      "announceId": "p207",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "850a",
+      "announceId": "p208",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "8524",
+      "announceId": "p209",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "ad66",
+      "announceId": "p210",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "f8cb",
+      "announceId": "p211",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "77e7",
+      "announceId": "p212",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "d610",
+      "announceId": "p213",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "01f4",
+      "announceId": "p203",
+      "userId": "45ba",
+      "state": "en attente"
+    },
+    {
+      "id": "649b",
+      "announceId": "p205",
+      "userId": "45ba",
+      "state": "en attente"
+    }
+  ],
+  "friends": [
+    {
+      "id": "f001",
+      "requesterId": "1",
+      "receiverId": "2",
+      "state": "accepté"
+    },
+    {
+      "id": "f002",
+      "requesterId": "3",
+      "receiverId": "1",
+      "state": "accepté"
+    },
+    {
+      "id": "f003",
+      "requesterId": "1",
+      "receiverId": "4",
+      "state": "en attente"
+    },
+    {
+      "id": "f004",
+      "requesterId": "5",
+      "receiverId": "1",
+      "state": "en attente"
+    },
+    {
+      "id": "4f94",
+      "requesterId": "1",
+      "receiverId": "u100",
+      "state": "accepté"
+    },
+    {
+      "id": "7e09",
+      "requesterId": "45ba",
+      "receiverId": "u105",
       "state": "en attente"
     }
   ],

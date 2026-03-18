@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import { isAuthenticated } from '../services/authSession'
+import logo from '../assets/logo.png'
 
 export function MainNavbar() {
   const loggedIn = isAuthenticated()
@@ -8,6 +9,7 @@ export function MainNavbar() {
     <header className="topbar">
       <div className="topbar-inner">
         <Link to="/" className="brand-link">
+          <img src={logo} alt="LinkStart" className="brand-logo" />
           LinkStart
         </Link>
 
@@ -28,6 +30,18 @@ export function MainNavbar() {
                 Match
               </NavLink>
               <NavLink
+                to="/favorites"
+                className={({ isActive }) => `main-nav-link ${isActive ? 'is-active' : ''}`}
+              >
+                Favoris
+              </NavLink>
+              <NavLink
+                to="/friends"
+                className={({ isActive }) => `main-nav-link ${isActive ? 'is-active' : ''}`}
+              >
+                Amis
+              </NavLink>
+              <NavLink
                 to="/post/create"
                 className={({ isActive }) => `main-nav-link ${isActive ? 'is-active' : ''}`}
               >
@@ -41,6 +55,7 @@ export function MainNavbar() {
               </NavLink>
               <NavLink
                 to="/me"
+                end
                 className={({ isActive }) => `main-nav-link ${isActive ? 'is-active' : ''}`}
               >
                 Mon profil

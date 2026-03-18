@@ -12,6 +12,8 @@ import { PostCreateView } from './views/PostCreateView'
 import { PostDeleteView } from './views/PostDeleteView'
 import { PostDetailView } from './views/PostDetailView'
 import { PostEditView } from './views/PostEditView'
+import { FavoritesView } from './views/FavoritesView'
+import { FriendsView } from './views/FriendsView'
 import { PostsView } from './views/PostsView'
 import { ProfileView } from './views/ProfileView'
 import { SwipeView } from './views/SwipeView'
@@ -48,6 +50,8 @@ function App() {
 
 				<Route element={<ProtectedRoute />}>
 					<Route path="/match" element={<SwipeView />} />
+					<Route path="/favorites" element={<FavoritesView />} />
+					<Route path="/friends" element={<FriendsView />} />
 					<Route path="/post/create" element={<PostCreateView />} />
 					<Route path="/post/delete" element={<PostDeleteView />} />
 					<Route path="/post/edit" element={<PostEditView />} />
