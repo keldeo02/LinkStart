@@ -552,7 +552,7 @@
       "id": "7e09",
       "requesterId": "45ba",
       "receiverId": "u105",
-      "state": "en attente"
+      "state": "accepté"
     }
   ],
   "games": [
@@ -678,6 +678,277 @@
         "PS5",
         "Xbox"
       ]
+    }
+  ],
+  "conversations": [
+    {
+      "id": "c1",
+      "participantIds": [
+        "1",
+        "u100"
+      ],
+      "lastMessage": "À bientôt du gaming!",
+      "lastMessageAt": "2026-03-18T14:30:00Z"
+    },
+    {
+      "id": "c2",
+      "participantIds": [
+        "1",
+        "u101"
+      ],
+      "lastMessage": "Je suis dispo ce soir",
+      "lastMessageAt": "2026-03-18T13:45:00Z"
+    },
+    {
+      "id": "c3",
+      "participantIds": [
+        "u100",
+        "u105"
+      ],
+      "lastMessage": "o,",
+      "lastMessageAt": "2026-03-18T09:05:46.811Z"
+    },
+    {
+      "id": "236d",
+      "participantIds": [
+        "45ba",
+        "u105"
+      ],
+      "lastMessage": "ok gros",
+      "lastMessageAt": "2026-03-18T09:27:05.414Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "conversationId": "c1",
+      "senderId": "1",
+      "content": "Salut! Tu veux jouer une partie?",
+      "createdAt": "2026-03-18T14:00:00Z"
+    },
+    {
+      "id": "m2",
+      "conversationId": "c1",
+      "senderId": "u100",
+      "content": "Ouais bien sûr! Je suis dispo maintenant",
+      "createdAt": "2026-03-18T14:05:00Z"
+    },
+    {
+      "id": "m3",
+      "conversationId": "c1",
+      "senderId": "1",
+      "content": "Parfait! Je lance le jeu",
+      "createdAt": "2026-03-18T14:10:00Z"
+    },
+    {
+      "id": "m4",
+      "conversationId": "c1",
+      "senderId": "u100",
+      "content": "À bientôt du gaming!",
+      "createdAt": "2026-03-18T14:30:00Z"
+    },
+    {
+      "id": "m5",
+      "conversationId": "c2",
+      "senderId": "1",
+      "content": "Coucou Luna! Ça va?",
+      "createdAt": "2026-03-18T13:00:00Z"
+    },
+    {
+      "id": "m6",
+      "conversationId": "c2",
+      "senderId": "u101",
+      "content": "Coucou! Oui ça va bien",
+      "createdAt": "2026-03-18T13:15:00Z"
+    },
+    {
+      "id": "m7",
+      "conversationId": "c2",
+      "senderId": "1",
+      "content": "Tu joues à quoi en ce moment?",
+      "createdAt": "2026-03-18T13:30:00Z"
+    },
+    {
+      "id": "m8",
+      "conversationId": "c2",
+      "senderId": "u101",
+      "content": "Je suis dispo ce soir",
+      "createdAt": "2026-03-18T13:45:00Z"
+    },
+    {
+      "id": "m9",
+      "conversationId": "c3",
+      "senderId": "u100",
+      "content": "Salut Zen! Tu veux faire du ranked?",
+      "createdAt": "2026-03-18T10:00:00Z"
+    },
+    {
+      "id": "m10",
+      "conversationId": "c3",
+      "senderId": "u105",
+      "content": "Ouais, j'aime bien le ranked",
+      "createdAt": "2026-03-18T10:30:00Z"
+    },
+    {
+      "id": "m11",
+      "conversationId": "c3",
+      "senderId": "u100",
+      "content": "Cool, on se fait une session demain?",
+      "createdAt": "2026-03-18T11:00:00Z"
+    },
+    {
+      "id": "m12",
+      "conversationId": "c3",
+      "senderId": "u105",
+      "content": "Oui, je suis intéressé!",
+      "createdAt": "2026-03-18T11:20:00Z"
+    },
+    {
+      "id": "c9cc",
+      "conversationId": "c3",
+      "senderId": "u105",
+      "content": "bb\n$",
+      "createdAt": "2026-03-18T09:04:57.609Z"
+    },
+    {
+      "id": "b9b1",
+      "conversationId": "c3",
+      "senderId": "u105",
+      "content": "o,",
+      "createdAt": "2026-03-18T09:05:46.811Z"
+    },
+    {
+      "id": "fe59",
+      "conversationId": "236d",
+      "senderId": "u105",
+      "content": "ni",
+      "createdAt": "2026-03-18T09:06:35.101Z"
+    },
+    {
+      "id": "9b73",
+      "conversationId": "236d",
+      "senderId": "45ba",
+      "content": ",k,k",
+      "createdAt": "2026-03-18T09:06:44.278Z"
+    },
+    {
+      "id": "ed1c",
+      "conversationId": "236d",
+      "senderId": "u105",
+      "content": "sddssdqsd",
+      "createdAt": "2026-03-18T09:07:21.204Z"
+    },
+    {
+      "id": "5325",
+      "conversationId": "236d",
+      "senderId": "45ba",
+      "content": "zazaza",
+      "createdAt": "2026-03-18T09:07:30.411Z"
+    },
+    {
+      "id": "8f1f",
+      "conversationId": "236d",
+      "senderId": "u105",
+      "content": "ojo",
+      "createdAt": "2026-03-18T09:11:31.307Z"
+    },
+    {
+      "id": "03b2",
+      "conversationId": "236d",
+      "senderId": "u105",
+      "content": "nin",
+      "createdAt": "2026-03-18T09:11:39.746Z"
+    },
+    {
+      "id": "8fff",
+      "conversationId": "236d",
+      "senderId": "u105",
+      "content": "nnnn",
+      "createdAt": "2026-03-18T09:11:59.614Z"
+    },
+    {
+      "id": "0b13",
+      "conversationId": "236d",
+      "senderId": "u105",
+      "content": "nb",
+      "createdAt": "2026-03-18T09:13:23.575Z"
+    },
+    {
+      "id": "c1fb",
+      "conversationId": "236d",
+      "senderId": "45ba",
+      "content": "jk",
+      "createdAt": "2026-03-18T09:13:32.001Z"
+    },
+    {
+      "id": "8445",
+      "conversationId": "236d",
+      "senderId": "u105",
+      "content": "hhh",
+      "createdAt": "2026-03-18T09:15:11.536Z"
+    },
+    {
+      "id": "f3e4",
+      "conversationId": "236d",
+      "senderId": "45ba",
+      "content": "bjkbbj",
+      "createdAt": "2026-03-18T09:15:22.780Z"
+    },
+    {
+      "id": "ef0b",
+      "conversationId": "236d",
+      "senderId": "u105",
+      "content": "a",
+      "createdAt": "2026-03-18T09:19:05.885Z"
+    },
+    {
+      "id": "6648",
+      "conversationId": "236d",
+      "senderId": "45ba",
+      "content": "a",
+      "createdAt": "2026-03-18T09:19:18.642Z"
+    },
+    {
+      "id": "067b",
+      "conversationId": "236d",
+      "senderId": "u105",
+      "content": "a",
+      "createdAt": "2026-03-18T09:19:55.896Z"
+    },
+    {
+      "id": "661e",
+      "conversationId": "236d",
+      "senderId": "u105",
+      "content": "salut ça va",
+      "createdAt": "2026-03-18T09:21:27.241Z"
+    },
+    {
+      "id": "a059",
+      "conversationId": "236d",
+      "senderId": "45ba",
+      "content": "ça va et toi",
+      "createdAt": "2026-03-18T09:21:46.839Z"
+    },
+    {
+      "id": "c13f",
+      "conversationId": "236d",
+      "senderId": "u105",
+      "content": ",l",
+      "createdAt": "2026-03-18T09:25:15.178Z"
+    },
+    {
+      "id": "9a41",
+      "conversationId": "236d",
+      "senderId": "u105",
+      "content": "sale grosse pute",
+      "createdAt": "2026-03-18T09:27:00.517Z"
+    },
+    {
+      "id": "586f",
+      "conversationId": "236d",
+      "senderId": "45ba",
+      "content": "ok gros",
+      "createdAt": "2026-03-18T09:27:05.414Z"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

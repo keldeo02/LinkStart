@@ -17,6 +17,9 @@ import { FriendsView } from './views/FriendsView'
 import { PostsView } from './views/PostsView'
 import { ProfileView } from './views/ProfileView'
 import { SwipeView } from './views/SwipeView'
+import { MessagesView } from './views/MessagesView'
+import { MessagesDetailView } from './views/MessagesDetailView'
+import './styles/messages.css'
 
 function AppLayout() {
 	return (
@@ -48,25 +51,26 @@ function App() {
 				<Route path="/register" element={<AuthPage mode="register" />} />
 				<Route path="/profile/:id" element={<ProfileView />} />
 
-				<Route element={<ProtectedRoute />}>
-					<Route path="/match" element={<SwipeView />} />
-					<Route path="/favorites" element={<FavoritesView />} />
-					<Route path="/friends" element={<FriendsView />} />
-					<Route path="/post/create" element={<PostCreateView />} />
-					<Route path="/post/delete" element={<PostDeleteView />} />
-					<Route path="/post/edit" element={<PostEditView />} />
-					<Route path="/me" element={<MeView />} />
-					<Route path="/me/post" element={<MePostsView />} />
-					<Route path="/me/edit" element={<MeEditView />} />
-					<Route path="/logout" element={<LogoutView />} />
-				</Route>
-
-				<Route path="*" element={<NotFoundView />} />
+			<Route element={<ProtectedRoute />}>
+				<Route path="/match" element={<SwipeView />} />
+				<Route path="/favorites" element={<FavoritesView />} />
+				<Route path="/friends" element={<FriendsView />} />
+				<Route path="/messages" element={<MessagesView />} />
+				<Route path="/messages/:id" element={<MessagesDetailView />} />
+				<Route path="/post/create" element={<PostCreateView />} />
+				<Route path="/post/delete" element={<PostDeleteView />} />
+				<Route path="/post/edit" element={<PostEditView />} />
+				<Route path="/me" element={<MeView />} />
+				<Route path="/me/post" element={<MePostsView />} />
+				<Route path="/me/edit" element={<MeEditView />} />
+				<Route path="/logout" element={<LogoutView />} />
 			</Route>
-			<Route path="*" element={<Navigate to="/" replace />} />
-		</Routes>
+
+			<Route path="*" element={<NotFoundView />} />
+		</Route>
+		<Route path="*" element={<Navigate to="/" replace />} />
+	</Routes>
 	)
 }
 
 export default App
-

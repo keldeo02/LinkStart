@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { getCurrentUserId } from '../services/authSession'
 import {
   deleteFriendship,
@@ -8,6 +8,10 @@ import {
   type Friendship,
 } from '../services/friendsApi'
 import { getUserById } from '../services/usersApi'
+import {
+  getConversationByParticipants,
+  createConversation,
+} from '../services/messagesApi'
 import type { User } from '../types/models'
 
 type FriendshipWithUser = Friendship & { user: User | null }
@@ -17,6 +21,7 @@ export function FriendsView() {
   const [isLoading, setIsLoading] = useState(true)
   const [message, setMessage] = useState('')
   const [errorMessage, setErrorMessage] = useState('')
+  const navigate = useNavigate()
 
   const currentUserId = getCurrentUserId()
 
@@ -79,6 +84,23 @@ export function FriendsView() {
     }
   }
 
+  const handleMessage = async (friendUserId: string) => {
+    try {
+      if (!currentUserId) return
+
+      // Cherche ou crée une conversation
+      let conversation = await getConversationByParticipants(currentUserId, friendUserId)
+
+      if (!conversation) {
+        conversation = await createConversation([currentUserId, friendUserId])
+      }
+
+      navigate(`/messages/${conversation.id}`)
+    } catch (error) {
+      setErrorMessage(error instanceof Error ? error.message : 'Erreur lors de la création de la conversation.')
+    }
+  }
+
   const accepted = friendships.filter((f) => f.state === 'accepté')
   const pendingReceived = friendships.filter(
     (f) => f.state === 'en attente' && f.receiverId === currentUserId,
@@ -137,6 +159,13 @@ export function FriendsView() {
                       {f.user?.username ?? 'Joueur inconnu'}
                     </Link>
                     <div className="inline-actions">
+                      <button
+                        type="button"
+                        className="btn-primary"
+                        onClick={() => void handleMessage(f.user?.id || '')}
+                      >
+                        Message
+                      </button>
                       <button
                         type="button"
                         className="btn-primary btn-danger"

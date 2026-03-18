@@ -37,3 +37,18 @@ export type SessionUser = {
   email: string
   preferences: string[]
 }
+
+export type Message = {
+  id: string
+  conversationId: string
+  senderId: string
+  content: string
+  createdAt: string
+}
+
+export type Conversation = {
+  id: string
+  participantIds: string[]
+  lastMessage?: string
+  lastMessageAt?: string
+}

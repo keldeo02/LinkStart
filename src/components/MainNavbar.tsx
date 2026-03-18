@@ -36,6 +36,12 @@ export function MainNavbar() {
                 Favoris
               </NavLink>
               <NavLink
+                to="/messages"
+                className={({ isActive }) => `main-nav-link ${isActive ? 'is-active' : ''}`}
+              >
+                Messages
+              </NavLink>
+              <NavLink
                 to="/friends"
                 className={({ isActive }) => `main-nav-link ${isActive ? 'is-active' : ''}`}
               >
